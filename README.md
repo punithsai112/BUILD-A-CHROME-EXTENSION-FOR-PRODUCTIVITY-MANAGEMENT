@@ -1,34 +1,52 @@
 # BUILD-A-CHROME-EXTENSION-FOR-PRODUCTIVITY-MANAGEMENT
-"COMPANY": CODTECH IT SOLUTIONS
-"NAME": RESHU SINGH
-"INTERN ID": CT04DH1157
-"DOMAIN": MERN STACK WEB DEVELOPEMENT
-"DURATION": 4 WEEKS
-"MENTOR": NEELA SANTOSH
+COMPANY NAME : CODETECH IT SOLUTIONS
 
-Project Description: Productivity Tracker Chrome Extension with MERN Backend
-This project is a Chrome extension for productivity management that helps users monitor and improve their digital habits. Built with a robust MERN (MongoDB, Express.js, React.js, Node.js) backend and integrated seamlessly into the browser using a custom Chrome extension, the tool offers real-time tracking of user activity, distraction control, and insightful daily productivity reports — all with secure user authentication and cross-device data syncing.
+NAME : MINUKU PUNITH SAI 
 
-The core functionality of the extension is to track time spent on different websites, helping users identify where their time goes while browsing. Every time a user visits or interacts with a website, the extension records the hostname and duration of their session. This data is then securely sent to a backend server using authenticated API requests, ensuring privacy and security.
+INTERN ID : CT08DZ1380
 
-A key feature of the system is user authentication using JWT (JSON Web Tokens). Users must log in through the extension using their email and password. The authentication system is built using secure hashing for passwords (bcryptjs) and signed tokens using a secret stored in environment variables (JWT_SECRET). Once logged in, the user's token is stored locally using Chrome's storage.local, which allows automatic session restoration and synchronization across multiple Chrome sessions or devices.
+DOMAIN NAME : MERN STACK web development
 
-The backend server is built using Node.js with Express, while MongoDB stores all user-specific data, including website activity logs. The schema is designed to link activity data directly to a unique userId, enabling personalized reports and secured access. The backend provides two main endpoints:
+DURATION : 8WEEKS
 
-/api/auth for login and signup
+MENTOR : NEELA SANTOSH
+# **Productivity Tracker Chrome Extension with MERN Backend**  
 
-/api/activity for saving and retrieving tracked data
+A **full-stack productivity management tool** that integrates a Chrome extension with a **MERN (MongoDB, Express.js, React.js, Node.js)** backend to help users monitor digital habits, block distractions, and get insightful daily productivity reports — all with **secure authentication** and **cross-device data sync**.  
 
-On the frontend, the Chrome extension includes a user interface (popup.html and popup.js) that displays a daily productivity report. After login, the extension dynamically fetches the user’s data and presents a breakdown of time spent on each site in seconds. This interface is built using vanilla JavaScript, and the logic is kept lightweight to ensure quick response inside the popup UI.
+---
 
-The system is designed to sync data across devices, meaning that whether a user logs in from one laptop or another, their time tracking and productivity history remain consistent and accessible. This is achieved by associating all activity data with the logged-in user's MongoDB document.
+## 🚀 Features  
 
-The project also includes basic site-blocking capabilities, which can be enhanced further to automatically block or alert users when they spend excessive time on blacklisted domains like social media.
+- **Website Time Tracking** – Monitor time spent on different sites in real-time.  
+- **Daily Productivity Reports** – View detailed breakdowns of your browsing activity.  
+- **Secure User Authentication** – Login with **JWT** and hashed passwords (**bcryptjs**).  
+- **Cross-Device Sync** – Access your activity history from any Chrome profile or device.  
+- **Basic Site Blocking** – Restrict time on blacklisted websites (e.g., social media).  
+- **Lightweight Popup UI** – Fast and responsive interface inside the extension.  
 
-By combining Chrome extension capabilities with a powerful MERN backend, the project demonstrates the potential of full-stack JavaScript in building practical, real-world productivity tools. This system not only empowers users with visibility into their habits but also helps them take control of their time by offering daily analytics and secure data synchronization.
+---
 
-Future improvements may include Google OAuth, CSV export of reports, customizable focus modes, and mobile browser support.
+## 🛠 Tech Stack  
+
+**Frontend (Chrome Extension)**  
+- HTML, CSS, Vanilla JavaScript  
+- Chrome Extension APIs (storage, tabs, runtime)  
+
+**Backend (Server)**  
+- **Node.js**, **Express.js**  
+- **MongoDB** (Mongoose ORM)  
+
+**Authentication & Security**  
+- JSON Web Tokens (**JWT**)  
+- Password hashing with **bcryptjs**  
+- Environment-based secrets (`JWT_SECRET`)  
+
+---
+
+
 
 #OUTPUT:
 <img width="1916" height="439" alt="Image" src="https://github.com/user-attachments/assets/4a8d1d40-e972-4686-a9ae-56e7d02eef5b" />
 <img width="1511" height="1063" alt="Image" src="https://github.com/user-attachments/assets/32f162b3-07e5-415f-95a8-92d852f13754" />
+
